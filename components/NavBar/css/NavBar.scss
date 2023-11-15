@@ -1,0 +1,28 @@
+.nav-bar{
+	.nav-bar-top{
+		position: fixed;
+		top:0;
+		left:0;
+		width: 100%;
+		z-index: 99;
+		background-color: $base-color;
+		box-sizing: border-box;
+		padding: 0rpx 30rpx 20rpx;
+		.nav-bar-container{
+			@include flex(flex-start);
+			box-sizing: border-box;
+			padding-left: 20rpx;
+			background: #ffffff;
+			border-radius: 30rpx;
+			height: 60rpx;
+			flex-grow: 1;
+			cursor: pointer;
+			.nav-bar-search-text{
+				fons-size:28rpx;
+				width: 100%;
+				color:$c-9;
+				margin-left: 20rpx;
+			}
+		}
+	}
+}
