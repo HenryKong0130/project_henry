@@ -6,7 +6,10 @@
 				<view 
 					 class="tab-scroll-item"
 					:class="{active: activeIndex === index }"  
-					 v-for="(item,index) in labelList">{{item.name}}
+					 v-for="(item,index) in labelList"
+					 :key="index"
+					 >{{item.name}}
+					 
 				</view>
 			</view>
 		</scroll-view>
@@ -26,7 +29,6 @@
 		data() {
 			return {
 				activeIndex: 0,
-				list: ['世界', '你好', '世界', '你好', '世界', '你好', '世界', '你好']
 			};
 		}
 	}
