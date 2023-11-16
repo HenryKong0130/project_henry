@@ -1,8 +1,6 @@
 <template>
-	<view class="container">
-		<view class="">left</view>
-		<view class="">center</view>
-		<view class="">right</view>
+	<view class="home-container">
+		<NavBar></NavBar>
 	</view>
 </template>
 
